@@ -14,3 +14,8 @@ store_depot/db/*.sqlite3-journal
 # Ignore all logfiles and tempfiles.
 store_depot/log/*.log
 store_depot/tmp
+
+# Ignore Eclipse Files
+.project
+.buildpath
+
