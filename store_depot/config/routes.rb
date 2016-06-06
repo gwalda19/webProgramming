@@ -22,6 +22,7 @@ StoreDepot::Application.routes.draw do
   #   resources :products
    resources :about_us
    resources :privacy_policy
+   resources :terms_of_service
 
   # Example resource route with options:
   #   resources :products do
