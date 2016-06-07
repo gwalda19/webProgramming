@@ -1,54 +1,45 @@
-#---
-# Excerpted from "Agile Web Development with Rails",
-# published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material,
-# courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose.
-# Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
-#---
-# encoding: utf-8
 Product.delete_all
-Product.create!(title: 'CoffeeScript',
+Product.create!(title: 'M&M\'s',
   description: 
     %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
+        M&M\'s. Milk chocolate candies that won't melt in your hand.
       </p>},
-  image_url:   'cs.jpg',    
+  image_url:   'm&ms.jpg',    
   price: 36.00)
+
 # . . .
-Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+Product.create!(title: 'Peanut M&M\'s',
+  description: 
+    %{<p>
+        Peanut M&M\'s. Milk chocolate candies with a peanut inside.
+      </p>},
+  image_url:   'peanut_m&ms.jpg',    
+  price: 4.73)
+
+# . . .
+Product.create!(title: 'Twizzlers',
   description:
     %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
+        Twizzlers. Strawberry flavored licorice.
       </p>},
-  image_url: 'ruby.jpg',
+  image_url: 'twizzlers.jpg',
   price: 49.95)
 # . . .
 
-Product.create!(title: 'Rails Test Prescriptions',
+Product.create!(title: 'Skittles',
   description: 
     %{<p>
-        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
-        Rails applications, covering Test-Driven Development from both a
-        theoretical perspective (why to test) and from a practical perspective
-        (how to test effectively). It covers the core Rails testing tools and
-        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
-        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
+        Skittles. Contains the following flavors: Grape, Lemon, Lime, Orange, and Strawberry.
       </p>},
-  image_url: 'rtp.jpg',
+  image_url: 'skittles.jpg',
   price: 34.95)
 
 # . . .
 Product.create!(title: 'Tropical Skittles',
   description: 
     %{<p>
-        Tropical Skittles. Contains the following flavors:
+        Tropical Skittles. Contains the following flavors: Banana Berry, Kiwi Lime, Mango Tangelo,
+        Pineapple Passion Fruit, and Strawberry Starfruit.
       </p>},
   image_url: 'tropical_skittles.jpg',
   price: 25.99)
@@ -57,7 +48,8 @@ Product.create!(title: 'Tropical Skittles',
 Product.create!(title: 'Wild Berry Skittles',
   description: 
     %{<p>
-        Wild Berry Skittles. Conatins the following flavors:
+        Wild Berry Skittles. Conatins the following flavors: Berry Punch, Melon Berry, Raspberry,
+        Strawberry, and Wild Cherry.
       </p>},
   image_url: 'wild_berry_skittles.jpg',
   price: 5.99)
