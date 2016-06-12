@@ -60,6 +60,7 @@ ContactInformation.create!(
   city:        'Moorestown',
   state:       'New Jersey',
   zipCode:     '08057',
-  phoneNumber: '856-291-2438' )
+  phoneNumber: '856-291-2438',
+  emailAddress: 'David.Gwalthney@missionse.com' )
   
   
