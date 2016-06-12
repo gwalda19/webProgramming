@@ -1,0 +1,79 @@
+<h1>Contact Us</h1>
+
+<p> </p>
+<p> We can be reached by phone, email, or in person at our location. <br> </p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Phone Number:</td>
+      <td><%= @contact_informations[0].phoneNumber %></td>
+    </tr>
+    <tr>
+      <td>Email Address:</td>
+      <td>David.Gwalthney@missionse.com</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> Our location is at: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<%= @contact_informations[0].street %> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<%= @contact_informations[0].city %> <%= @contact_informations[0].state %>, <%= @contact_informations[0].zipCode %> </p>
+
+<table>
+  <thead>
+    <caption style="text-align:center;"> The store hours are: </caption>
+    <tr>
+      <th></th>   <!-- Day of week -->
+      <th></th>   <!-- Open Time -->
+      <th></th>   <!-- - -->
+      <th></th>   <!-- Close Time -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monday:</td>
+      <td>9am</td>
+      <td>-</td>
+      <td>6pm</td>
+    </tr>
+    <tr>
+      <td>Tuesday:</td>
+      <td>9am</td>
+      <td>-</td>
+      <td>6pm</td>
+    </tr>
+    <tr>
+      <td>Wednesday:</td>
+      <td>7am</td>
+      <td>-</td>
+      <td>4pm</td>
+    </tr>
+    <tr>
+      <td>Thursday:</td>
+      <td>7am</td>
+      <td>-</td>
+      <td>4pm</td>
+    </tr>
+    <tr>
+      <td>Friday:</td>
+      <td>8am</td>
+      <td>-</td>
+      <td>5pm</td>
+    </tr>
+    <tr>
+      <td>Saturday:</td>
+      <td>10am</td>
+      <td>-</td>
+      <td>4pm</td>
+    </tr>
+    <tr>
+      <td>Sunday:</td>
+      <td>10am</td>
+      <td>-</td>
+      <td>4pm</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
