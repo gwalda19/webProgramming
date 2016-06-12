@@ -54,4 +54,12 @@ Product.create!(title: 'Wild Berry Skittles',
   image_url: 'wild_berry_skittles.jpg',
   price: 5.99)
   
+ContactInformation.delete_all
+ContactInformation.create!(
+  street:      '121 Whittendale Drive',
+  city:        'Moorestown',
+  state:       'New Jersey',
+  zipCode:     '08057',
+  phoneNumber: '856-291-2438' )
+  
   

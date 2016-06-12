@@ -1,4 +1,6 @@
 StoreDepot::Application.routes.draw do
+  resources :contact_informations
+
   resources :line_items
 
   resources :carts
