@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20160623212021) do
   create_table "contact_informations", force: :cascade do |t|
     t.string   "street"
     t.string   "city"
-    t.decimal  "zipCode"
+    t.string   "zipCode"
     t.string   "state"
-    t.decimal  "phoneNumber"
+    t.string   "phoneNumber"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "emailAddress"
