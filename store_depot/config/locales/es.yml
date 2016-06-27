@@ -19,37 +19,36 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
 
   number:
     currency:
       format:
-        unit:      "$"
+        unit:      "$US"
         precision: 2
-        separator: "."
-        delimiter: ","
-        format:    "%u%n"
+        separator: ","
+        delimiter: "."
+        format:    "%n&nbsp;%u"
 
   layouts:
     application:
-      title:               "Candy Shop"
-      home:                "Home"
-      contactUs_html:      "Contact Us"
-      aboutUs:             "About Us"
-      privacyPolicy_html:  "Privacy Policy"
-      termsOfService_html: "Terms Of Service"
-      shoppingCart:        "Shopping Cart"
+      title:          "Candy Shop"
+      home:           "Casa"
+      contactUs_html:      "Cont&aacute;ctenos"
+      aboutUs:        "Sobre Nosotros"
+      privacyPolicy_html:  "Pol&iacute;tica de Privacidad"
+      termsOfService_html: "T&eacute;rminos de Servicio"
+      shoppingCart:   "Carrito de Compras"
 
   store:
     index:
-      title_html: "Candy Catalog"
-      add_html:   "Add to Cart"
+      title_html: "Cat&aacute;logo de Caramelo"
+      add_html:   "A&ntilde;adir a la Cesta"
       
   carts:
     cart:
-      title:    "Your Cart"
-      empty:    "Empty Cart"
-      checkout: "Checkout"
-      
+      title:    "Su Pedido"
+      empty:    "Carro Vacio"
+      checkout: "Revisa"
       
       
