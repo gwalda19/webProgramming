@@ -35,6 +35,11 @@
         <li><%= link_to t('.termsOfService_html'), terms_of_service_index_url %></li>
         <li><%= link_to t('.shoppingCart'), 
                 if(session[:cart_id] != nil) then cart_url(session[:cart_id]) else carts_url end%></li>
+
+        <% if session[:user_id] == nil %>
+          <li><%= link_to t('.login_html'), login_path %></li>
+          <li><%= link_to t('.createUser'), new_user_path %></li>
+        <% end %>
       </ul>
       
       <% if session[:user_id] %>

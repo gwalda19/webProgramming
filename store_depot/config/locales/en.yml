@@ -39,6 +39,8 @@ en:
       privacyPolicy_html:  "Privacy Policy"
       termsOfService_html: "Terms Of Service"
       shoppingCart:        "Shopping Cart"
+      login_html:          "Login"
+      createUser:          "Create User"
 
   store:
     index:

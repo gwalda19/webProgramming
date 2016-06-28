@@ -60,6 +60,8 @@ es:
       privacyPolicy_html:  "Pol&iacute;tica de Privacidad"
       termsOfService_html: "T&eacute;rminos de Servicio"
       shoppingCart:        "Carrito de Compras"
+      login_html:          "Iniciar Sesi&oacute;n"
+      createUser:          "Crear Usuario"
 
   store:
     index:

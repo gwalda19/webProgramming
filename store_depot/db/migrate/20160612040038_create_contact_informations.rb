@@ -3,9 +3,9 @@ class CreateContactInformations < ActiveRecord::Migration
     create_table :contact_informations do |t|
       t.string :street
       t.string :city
-      t.decimal :zipCode
+      t.string :zipCode
       t.string :state
-      t.decimal :phoneNumber
+      t.string :phoneNumber
 
       t.timestamps
     end
