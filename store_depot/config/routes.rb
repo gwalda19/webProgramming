@@ -5,7 +5,7 @@ StoreDepot::Application.routes.draw do
   controller :sessions do
     get    'login'  => :new
     post   'login'  => :create
-    delete 'logout' => :destory
+    delete 'logout' => :destroy
   end
 
   get "sessions/create"
