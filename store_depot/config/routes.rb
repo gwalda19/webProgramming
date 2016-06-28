@@ -1,6 +1,7 @@
 StoreDepot::Application.routes.draw do
 
   get 'admin' => 'admin#index'
+  
   controller :sessions do
     get    'login'  => :new
     post   'login'  => :create
@@ -9,23 +10,29 @@ StoreDepot::Application.routes.draw do
 
   get "sessions/create"
   get "sessions/destroy"
-  
-  resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
-  resources :contact_informations
-
   get "store/index"
+
+  resources :users
+  resources :contact_informations
+  resources :about_us
+  resources :privacy_policy
+  resources :terms_of_service
+    
   resources :products do
     get :who_bought, on: :member
   end
 
+  scope '(:locale)' do
+    resources :orders
+    resources :line_items
+    resources :carts
+    # You can have the root of your site routed with "root"
+    root 'store#index', as: 'store', via: :all
+  end
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-   root 'store#index', as: 'store'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -35,9 +42,6 @@ StoreDepot::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-   resources :about_us
-   resources :privacy_policy
-   resources :terms_of_service
 
   # Example resource route with options:
   #   resources :products do
