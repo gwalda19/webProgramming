@@ -32,7 +32,7 @@ en:
 
   layouts:
     application:
-      title:               "Candy Shop"
+      title_html:          "Candy Shop"
       home:                "Home"
       contactUs_html:      "Contact Us"
       aboutUs:             "About Us"
@@ -51,5 +51,17 @@ en:
       empty:    "Empty Cart"
       checkout: "Checkout"
       
+  orders:
+    new:
+      legend:          "Please Enter Your Details"
+    form:
+      name:            "Name"
+      address_html:    "Address"
+      email:           "E-mail"
+      pay_type:        "Pay with"
+      pay_prompt_html: "Select a payment method"
+      submit:          "Place Order"
+      
+  thanks: "Thank you for your order."
       
       
